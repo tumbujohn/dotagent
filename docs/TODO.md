@@ -6,7 +6,6 @@ _None currently — this is a personal instructions library, not a shipping prod
 
 ## High
 
-- **Fill or repurpose `skills/engineering-constitution/SKILL.md`** — currently an empty file. Decide (per [DECISIONS.md](DECISIONS.md) D1) whether it should become a thin pointer to `CLAUDE.md`'s constitution section, a standalone duplicate for projects that only want skills (not a full `CLAUDE.md` swap), or be deleted if it adds no value.
 - **Fill or delete `CUSTOMCMD.md`** — referenced by `CLAUDE.md` ("Always Check the `.claude/CUSTOMCMD.md` for custom commands") but currently empty at the repo root, and at the wrong path relative to how it's referenced (`.claude/CUSTOMCMD.md` vs. root `CUSTOMCMD.md`). Clarify intended location and populate or remove the reference.
 - **Add `skills/frontend-design/LICENSE.txt`** — the skill's frontmatter says "Complete terms in LICENSE.txt" but no such file exists in that folder.
 
@@ -16,6 +15,7 @@ _None currently — this is a personal instructions library, not a shipping prod
 - **Consolidate or cross-link the duplicated migration policy** between `CLAUDE.md`'s `## Database Operations` section and `rules/gemini-agent-rules` (see [DECISIONS.md](DECISIONS.md) D3) if it drifts out of sync again.
 - **Add a `.gitignore`** — none exists yet; low risk today since the repo has no build artifacts, but worth adding proactively (editor swap files, OS files) before the repo grows.
 - **Wire up `design-taste-frontend`** with an explicit slash-invocation note or trigger description consistent with `frontend-design`, since both currently cover overlapping "frontend design" ground with different depth/style — clarify when each applies (see `docs/USER.md`).
+- **Keep `skills/engineering-constitution/SKILL.md` in sync with `CLAUDE.md`'s inline constitution.** Now that the skill file carries the full constitution body under proper `SKILL.md` frontmatter (see [DECISIONS.md](DECISIONS.md) D1), the same text exists in two places; any future rule change must be applied to both or one will go stale.
 
 ## Low
 

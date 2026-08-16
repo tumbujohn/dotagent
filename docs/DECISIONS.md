@@ -10,7 +10,7 @@
 
 **Reasoning:** `CLAUDE.md` is meant to be portable as a single file copy-paste into a new project's root, active immediately with no separate install step. Requiring a target project to also copy multiple skill folders into `.claude/skills/` before the constitution/mini-skills work would break that single-file portability.
 
-**Consequences:** `skills/engineering-constitution/SKILL.md` currently exists as an empty placeholder folder — it is not the source of truth and should either be filled in as a thin pointer/duplicate for discoverability, or removed to avoid implying it's usable standalone. See [TODO.md](TODO.md).
+**Consequences:** `skills/engineering-constitution/SKILL.md` now carries the full constitution text under standard `SKILL.md` frontmatter (`name`/`description`), so it can be installed standalone into a project's `.claude/skills/` when only the constitution — not the rest of `CLAUDE.md` — is wanted. `CLAUDE.md`'s inline copy remains the source of truth for portability; the skill file is a duplicate for discoverability and standalone use, so a change to one must be mirrored in the other. See [TODO.md](TODO.md).
 
 ---
 

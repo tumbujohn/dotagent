@@ -6,7 +6,7 @@ _Last updated: 2026-08-16_
 
 - Master `CLAUDE.md` established with: project-specific header instructions, session behavior notes, database operation rule, and four embedded mini-skills (Goal-Driven Backcasting, Product Maturity Review, UIUX Design Mode, Documentation System).
 - `archive/CLAUDE.md` preserved as the earlier, shorter version for reference.
-- Three skill folders started under `skills/`: `frontend-design` (complete), `design-taste-frontend` (complete, extensive), `engineering-constitution` (empty placeholder).
+- Three skill folders complete under `skills/`: `frontend-design`, `design-taste-frontend`, and `engineering-constitution` (now carries the full constitution body under proper `SKILL.md` frontmatter, mirroring `CLAUDE.md`'s inline copy).
 - Four rule files under `rules/`: `design-system-master.md`, `high-quality-modern-ui-design.md`, `local-dev-env.md` (all `trigger: always_on` style), and `gemini-agent-rules` (free-form project rules + PBP entries).
 - Full documentation system initialized: root `README.md` plus `docs/USER.md`, `DEVELOPMENT.md`, `ARCHITECTURE.md`, `REQUIREMENTS.md`, `PROGRESS.md`, `TODO.md`, `DECISIONS.md`, `CHANGELOG.md`, `SECURITY.md`.
 
