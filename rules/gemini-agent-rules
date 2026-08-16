@@ -1,0 +1,21 @@
+
+## User Added Instruction
+- when a question is asked, answer first and dont execute untill user give the go ahead.
+- Always Use the provided Migration facilities to execute the queries; Only create the queries if the migration facilities are not available.
+- Ensure the Database ooperation, logic and SQL is such that the database can easily be changed from sqlite to MySQL/MariaDB; that means very little or no SQLite specific constructs. 
+- Always put all tests and debuging scripts in a /test or /debug folder if available and is approriate to use or create one
+- Always Use the docs folder for documentation any kind if available and is appropriate to use or create one. Readme can stay in the root unless manually moved or requested to do so.
+- Always confirm project architecture to ensure no violation in design partern; sometimes php projects will use a service layer architecture as opposed to plain MVC.
+- Always ensure migrations are not desctructive and only adds so as not to cause issues when updating a live system.
+
+----------------------------------------------------------------------------
+## Problems/Best-Practices - PBP
+
+1. PBP-1
+
+Problem: 
+If an env files is used in a project, .env.example should be kept in sync with all environment variables the application reads, making it easier for a new developer to configure the application from scratch. 
+If not in sync, the new developers will find it hard to configure the application from scratch.
+
+Solution/Best practice:
+.env.example should mirror all keys in .env (without secret values)
