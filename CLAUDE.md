@@ -2023,6 +2023,7 @@ SECURITY.md
 
 - All core documents are created in `/docs/` apart from the `README.md` that always exist in the project root.
 - Additional documentation may be created under `/docs/` when required. 
+- Never mention "CLAUDE.md" or any reference to this design system in any documentation. The Document should only contain what it is intended for. 
 
 ---
 
