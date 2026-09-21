@@ -7,6 +7,16 @@
 - Root `README.md` describing the repo's purpose and contents.
 - Full `/docs/` documentation system: `USER.md`, `DEVELOPMENT.md`, `ARCHITECTURE.md`, `REQUIREMENTS.md`, `PROGRESS.md`, `TODO.md`, `DECISIONS.md`, `CHANGELOG.md`, `SECURITY.md`.
 
+## 2026-09-21
+
+### Added
+
+- `emilkowalski/skills` installed live via `npx skills@latest add emilkowalski/skills`: `animate`, `animate-expo`, `animation-vocabulary`, `apple-design`, `ask-sonner`, `emil-design-eng`, `find-animation-opportunities`, `improve-animations`, `mobile-native`, `pick-ui-library`, `prototype`, `review-animations`, `write-swift`.
+- `pbakaus/impeccable` installed live via `npx impeccable install`: the `impeccable` skill, four subagents under `.claude/agents/`, and `PostToolUse`/`Stop` design-check hooks.
+- `nextlevelbuilder/ui-ux-pro-max-skill` installed live via `npx ui-ux-pro-max-cli init --ai claude`: `ui-ux-pro-max`, `banner-design`, `brand`, `design`, `design-system`, `slides`, `ui-styling`.
+- `.gitignore` — excludes `.claude/settings.local.json`, `.claude/projects/`, the downloaded impeccable engine binary, `node_modules/`, and OS files.
+- `docs/DECISIONS.md` D5 documenting why these plugins were installed live rather than vendored into `skills/`.
+
 ## 2026-08-16
 
 ### Added

@@ -1,6 +1,6 @@
 # PROGRESS.md — Current State
 
-_Last updated: 2026-08-16_
+_Last updated: 2026-09-21_
 
 ## Completed
 
@@ -9,6 +9,8 @@ _Last updated: 2026-08-16_
 - Three skill folders complete under `skills/`: `frontend-design`, `design-taste-frontend`, and `engineering-constitution` (now carries the full constitution body under proper `SKILL.md` frontmatter, mirroring `CLAUDE.md`'s inline copy).
 - Four rule files under `rules/`: `design-system-master.md`, `high-quality-modern-ui-design.md`, `local-dev-env.md` (all `trigger: always_on` style), and `gemini-agent-rules` (free-form project rules + PBP entries).
 - Full documentation system initialized: root `README.md` plus `docs/USER.md`, `DEVELOPMENT.md`, `ARCHITECTURE.md`, `REQUIREMENTS.md`, `PROGRESS.md`, `TODO.md`, `DECISIONS.md`, `CHANGELOG.md`, `SECURITY.md`.
+- Three third-party plugin skill sets installed live in this repo via their official installers: `emilkowalski/skills` (13 skills), `pbakaus/impeccable` (1 skill + 4 subagents + hooks), `nextlevelbuilder/ui-ux-pro-max-skill` (7 skills) — see [DECISIONS.md](DECISIONS.md) D5.
+- `.gitignore` added, covering per-machine Claude Code state and the downloaded impeccable engine binary.
 
 ## Current milestone
 
@@ -20,6 +22,7 @@ Documentation system stood up from scratch (this repo had none before). Next mil
 
 ## Recently completed
 
+- 2026-09-21: Installed three external plugin skill sets (`emilkowalski/skills`, `pbakaus/impeccable`, `ui-ux-pro-max-cli`) directly into this repo via their official `npx` installers; added `.gitignore`; updated `README.md`, `ARCHITECTURE.md`, and `DECISIONS.md` (D5) to document the new live-install mechanism alongside the existing `skills/` source library.
 - 2026-08-16: Documentation Mode run — created root `README.md` and the full `docs/` core document set; identified and recorded existing documentation/content drift (empty files, missing `LICENSE.txt`, duplicated migration-policy wording) rather than silently fixing it.
 - 2026-08-16 (earlier commit): Added `rules/design-system-master.md`, `rules/gemini-agent-rules`, `rules/high-quality-modern-ui-design.md`, `rules/local-dev-env.md`.
 - 2026-08-16 (earlier commit): Added `CLAUDE.md` (constitution + mini-skills), `archive/CLAUDE.md`, `skills/design-taste-frontend/SKILL.md`, `skills/frontend-design/SKILL.md`, and empty placeholders `CUSTOMCMD.md`, `Move The CLAUDE.md File To Project Root`, `skills/engineering-constitution/SKILL.md`.

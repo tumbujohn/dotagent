@@ -23,6 +23,19 @@ The goal is to stop re-writing the same instructions for every new project and i
 | [`skills/design-taste-frontend/`](skills/design-taste-frontend/SKILL.md) | Detailed "anti-slop" frontend skill for landing pages, portfolios, and redesigns (brief inference, design dials, layout/typography/motion rules). |
 | [`skills/engineering-constitution/`](skills/engineering-constitution/SKILL.md) | Placeholder skill wrapper for the engineering constitution (currently empty — content currently lives inline in `CLAUDE.md`). |
 | [`rules/`](rules/) | Standalone always-on rule snippets (UI design expert persona, modern UI design principles, local dev environment notes, general project rules). |
+| `.claude/skills/`, `.agents/skills/` | Live, installed third-party plugin skills for use in *this* repo (not the source library — see below). |
+
+## Installed plugin skills
+
+Unlike `skills/` (a source library meant to be copied into other projects), `.claude/skills/` and `.agents/skills/` hold third-party skills installed directly into this repo with their own official installers, so they're available immediately in any Claude Code (or Codex CLI) session opened here:
+
+| Plugin | Install command | What it adds |
+|---|---|---|
+| [emilkowalski/skills](https://github.com/emilkowalski/skills) | `npx skills@latest add emilkowalski/skills` | Animation, Apple design, Swift, and UI-library-choice skills (`animate`, `apple-design`, `emil-design-eng`, `review-animations`, and others). |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | `npx impeccable install` | The `impeccable` skill: 24 `/impeccable <command>` design commands plus deterministic detector rules, wired to a `PostToolUse`/`Stop` hook in `.claude/settings.local.json`. Run `/impeccable init` once inside Claude Code to finish setup. |
+| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | `npx ui-ux-pro-max-cli init --ai claude` | The `ui-ux-pro-max` skill plus `banner-design`, `brand`, `design`, `design-system`, `slides`, `ui-styling` skills for design-system generation. |
+
+Each installer can be re-run with its `update` (or equivalent) subcommand to pull newer versions. See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for how this coexists with the `skills/` source library.
 
 ## How to use this repo
 

@@ -1,0 +1,13 @@
+# Claude Code local state (per-machine, not shared)
+.claude/settings.local.json
+.claude/projects/
+
+# Downloaded platform-specific engine binaries (re-fetched on install, not portable across machines)
+**/skills/impeccable/scripts/bin/
+
+# Node
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
