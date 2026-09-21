@@ -37,6 +37,34 @@ Unlike `skills/` (a source library meant to be copied into other projects), `.cl
 
 Each installer can be re-run with its `update` (or equivalent) subcommand to pull newer versions. See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for how this coexists with the `skills/` source library.
 
+### Which plugin to reach for
+
+The three plugins solve different problems. Use them together, not as alternatives.
+
+#### UI/UX Pro Max
+
+- Main strength: comprehensive design intelligence, professional layouts, stacks, and foundational aesthetics.
+- How it works: gives the AI structural guidelines covering color palettes, typography rules, component selection, and chart styling.
+- Best used for: turning raw AI code into a cohesive, professional-grade layout from the initial prompt.
+
+#### Impeccable (by Paul Bakos)
+
+- Main strength: anti-slop auditing, critique, and a shared design vocabulary of commands.
+- How it works: keeps a library of cliché "AI slop" patterns and steers the AI away from them. Translates abstract feedback into 24 practical commands (`/polish`, `/critique`, `/bolder`, `/quieter`, and more), tuned to whether the project is in Persuade (marketing) or Operate (dashboard) mode.
+- Best used for: polishing an existing codebase, removing generic AI design traits, and fine-tuning production quality.
+
+#### Emil Kowalski Skills (`emilkowalski/skills`, especially `improve-animations`)
+
+- Main strength: motion design, micro-interactions, and fluid frontend animation patterns.
+- How it works: focuses on the physics, timing, and feel of web elements, turning static elements into responsive experiences.
+- Best used for: adding polished transitions, animations, and lively interface interactions that standard layout skills overlook.
+
+| Feature | UI/UX Pro Max | Impeccable | Emil Kowalski Skills |
+|---|---|---|---|
+| Core focus | Layouts, palettes, typography | Critique, polish, anti-pattern removal | Motion, transitions, animation |
+| Primary action | Sets structural baselines | Runs specific design commands (`/polish`) | Animates and refines dynamics |
+| Best combined with | Structural foundations | Production-level cleanup | Micro-interaction layering |
+
 ## How to use this repo
 
 1. **New project bootstrap:** copy `CLAUDE.md` into the target project's root (see the empty note file `Move The CLAUDE.md File To Project Root` — a reminder of this step) and adjust the project-specific sections (skills path, DB rules, etc.) to match that project.
